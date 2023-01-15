@@ -1,0 +1,15 @@
+name: ROS
+version: '${project.version}'
+main: minecraft.plugin.ros.ros.ROS
+
+commands:
+  ros:
+    usage: /ros reload
+    permission: ros.ros
+permissions:
+  ros.ros:
+    default: op
+  ros.*:
+    default: op
+    children:
+      ros.ros: true
