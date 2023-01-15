@@ -37,6 +37,6 @@ public class Draw {
     }
 
     static void drawOnePixel(Location location) {
-        location.getWorld().spawnParticle(Particle.REDSTONE, location, 1);
+        location.getWorld().spawnParticle(Particle.REDSTONE, location, 0,0,0,0);
     }
 }

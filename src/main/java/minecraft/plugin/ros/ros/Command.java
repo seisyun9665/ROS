@@ -20,7 +20,7 @@ public class Command implements CommandExecutor {
                         plugin.reload(sender);
                         return true;
                     case "stick":
-                        if (!(command instanceof Player)) {
+                        if (!(sender instanceof Player)) {
                             sender.sendMessage("this command only can use player.");
                             return true;
                         }
